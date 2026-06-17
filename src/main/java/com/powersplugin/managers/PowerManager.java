@@ -62,9 +62,9 @@ public class PowerManager {
         player.playSound(player.getLocation(), org.bukkit.Sound.ENTITY_PLAYER_LEVELUP, 1f, 1.5f);
 
         // Boost effects
-        player.addPotionEffect(new PotionEffect(PotionEffectType.STRENGTH, 36000, 2, false, true, true));
+        player.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 36000, 2, false, true, true));
         player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 36000, 2, false, true, true));
-        player.addPotionEffect(new PotionEffect(PotionEffectType.RESISTANCE, 36000, 2, false, true, true));
+        player.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 36000, 2, false, true, true));
         player.addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, 36000, 1, false, true, true));
     }
 
