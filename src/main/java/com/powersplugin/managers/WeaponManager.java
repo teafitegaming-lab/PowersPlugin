@@ -66,11 +66,11 @@ public class WeaponManager {
         meta.lore(lore);
 
         // Enchantments
-        meta.addEnchant(Enchantment.SHARPNESS, weapon.isOneShotWeapon() ? 10 : 7, true);
-        meta.addEnchant(Enchantment.UNBREAKING, 10, true);
+        meta.addEnchant(Enchantment.DAMAGE_ALL, weapon.isOneShotWeapon() ? 10 : 7, true);
+        meta.addEnchant(Enchantment.DURABILITY, 10, true);
         meta.addEnchant(Enchantment.MENDING, 1, true);
         if (weapon.isOneShotWeapon()) {
-            meta.addEnchant(Enchantment.SWEEPING_EDGE, 5, true);
+            meta.addEnchant(Enchantment.SWEEPING, 5, true);
         }
 
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
