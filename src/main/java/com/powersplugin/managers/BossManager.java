@@ -76,10 +76,10 @@ public class BossManager {
         boss.setCustomNameVisible(true);
 
         double maxHp = plugin.getConfig().getDouble("boss.health", 500.0);
-        boss.getAttribute(Attribute.MAX_HEALTH).setBaseValue(maxHp);
+        boss.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(maxHp);
         boss.setHealth(maxHp);
 
-        boss.addPotionEffect(new PotionEffect(PotionEffectType.STRENGTH, Integer.MAX_VALUE, 3));
+        boss.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, Integer.MAX_VALUE, 3));
         boss.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, Integer.MAX_VALUE, 1));
         boss.setInvulnerable(false);
 
@@ -128,7 +128,7 @@ public class BossManager {
             final int fi = i;
             new BukkitRunnable() {
                 @Override public void run() {
-                    loc.getWorld().spawnParticle(Particle.EXPLOSION, loc.clone().add(
+                    loc.getWorld().spawnParticle(Particle.EXPLOSION_LARGE, loc.clone().add(
                             (Math.random()-0.5)*4, Math.random()*3, (Math.random()-0.5)*4), 5, 0,0,0,0);
                     loc.getWorld().spawnParticle(Particle.TOTEM_OF_UNDYING, loc.clone().add(0,1,0), 30, 2,2,2,0.3);
                     loc.getWorld().strikeLightningEffect(loc);
