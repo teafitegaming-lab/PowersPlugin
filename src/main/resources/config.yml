@@ -1,0 +1,19 @@
+plugin:
+  prefix: "&8[&6Powers&8] "
+
+# Power Apple Settings
+power-apple:
+  crafted-count: 0
+
+# God Armor pieces - tracked individually
+god-armor-crafted:
+  NETHERITE_HELMET: false
+  NETHERITE_CHESTPLATE: false
+  NETHERITE_LEGGINGS: false
+  NETHERITE_BOOTS: false
+
+# Boss Settings
+boss:
+  health: 500.0
+  spawn-message: "&c&lTHE ANCIENT GUARDIAN HAS AWOKEN! DEFEAT IT TO CLAIM THE CELESTIAL JUDGMENT SWORD!"
+  death-message: "&a&lTHE ANCIENT GUARDIAN HAS BEEN DEFEATED! THE CELESTIAL JUDGMENT SWORD DROPS!"
