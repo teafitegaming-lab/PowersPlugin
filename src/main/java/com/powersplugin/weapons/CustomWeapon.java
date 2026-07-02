@@ -13,7 +13,7 @@ public enum CustomWeapon {
         CustomPower.CELESTIAL_JUDGMENT_POWER,
         Material.NETHERITE_SWORD,
         99999.0, // One-shot damage
-        "&4&lInstant Kill. Shields cannot stop it.",
+        "&4&lInstant Kill. Totems Can't Stop it.",
         KillEffect.CELESTIAL_JUDGMENT_BEAM,
         true  // isOneShotWeapon
     );
